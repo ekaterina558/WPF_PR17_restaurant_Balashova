@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPF_PR17_restaurant_Balashova.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_PR17_restaurant_Balashova"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <Grid Background="#2b96d1">
+                <Image Source="/Resources/zebra.jpg" Height="150" Width="120" Canvas.Left="48" Canvas.Top="-15" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBlock Text="Мармеладная зебра" Style="{StaticResource Title}"/>
+                <Button Content="Авторизация" Name="Btn_Avt" Click="Btn_Avt_Click"  Style="{StaticResource ButtonA}" HorizontalAlignment="Right"/>
+            </Grid>
+            <Frame x:Name="FrmMain" NavigationUIVisibility="Hidden" Grid.Row="1"/>
+            <Grid Background="#2b96d1" Grid.Row="2"></Grid>
+        </Grid>
+    </Grid>
+</Window>
